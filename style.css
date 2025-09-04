@@ -28,3 +28,45 @@
   color: #333;
   margin-bottom: 20px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+  }
+  
+  form input:focus {
+    border-color: #5c9ded;
+    outline: none;
+  }
+  
+  /* Gomb */
+  form button {
+    padding: 12px;
+    background-color: #5c9ded;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #417cd4;
+  }
