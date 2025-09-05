@@ -1,10 +1,10 @@
 function SaveData(){
     const data = {
-        name: document.getElementById('name').value,
-        city: document.getElementById('city').value,
-        zipcode: document.getElementById('zipcode').value,
-        street: document.getElementById('street').value,
-        houseNumber: document.getElementById('houseNumber').value
+        name: document.getElementById('nev').value,
+        city: document.getElementById('telepules').value,
+        zipcode: document.getElementById('iranyitoszam').value,
+        street: document.getElementById('kozterulet').value,
+        houseNumber: document.getElementById('hazszam').value
     };
 
     localStorage.setItem('userData', JSON.stringify(data));
