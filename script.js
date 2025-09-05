@@ -1,9 +1,12 @@
-function SaveDataFromForm(){
-    let name = document.getElementById("nev").value;
-    localStorage.setItem('Name', name);
-}
+function SaveData(){
+    const data = {
+        name: document.getElementById('name').value,
+        city: document.getElementById('city').value,
+        zipcode: document.getElementById('zipcode').value,
+        street: document.getElementById('street').value,
+        houseNumber: document.getElementById('houseNumber').value
+    };
 
-let submit = document.getElementById("submit");
-submit.onclick = function SaveDataFromForm(){
-
+    localStorage.setItem('userData', JSON.stringify(data));
+    alert('Adatok sikeresen mentve!');
 }
